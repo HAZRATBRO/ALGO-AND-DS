@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- saved from url=(0063)http://www.difranco.net/compsci/C_Operator_Precedence_Table.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="PageBreeze Free HTML Editor (http://www.pagebreeze.com)">
+
+<title>C Operator Precedence Table</title>
+
+<style>
+a.navwhite:link { text-decoration: none; color: #ffffff; font-family: Verdana, Arial, sans-serif; font-size: 10px; font-weight: bold; }
+a.navwhite:visited { text-decoration: none; color: #ffffff; font-family: Verdana, Arial, sans-serif; font-size: 10px; font-weight: bold; }
+a.navwhite:hover { text-decoration: underline; color: #ffffff; font-family: Verdana, Arial, sans-serif; font-size: 10px; font-weight: bold; }
+
+a.navblack:link { text-decoration: none; color: #000000; font-family: Verdana, Arial, sans-serif; font-size: 10px; font-weight: bold; }
+a.navblack:visited { text-decoration: none; color: #000000; font-family: Verdana, Arial, sans-serif; font-size: 10px; font-weight: bold; }
+a.navblack:hover { text-decoration: underline; color: #000000; font-family: Verdana, Arial, sans-serif; font-size: 10px; font-weight: bold; }
+
+</style>
+
+<style>
+<!--
+h1 { font-family: Arial, sans-serif; font-size: 30px; color: #004080;}
+h2 { font-family: Arial, sans-serif; font-size: 18px; color: #004080;}
+
+body,p,b,i,em,dt,dd,dl,sl,caption,th,td,tr,u,blink,select,option,form,div,li { font-family: Arial, sans-serif; font-size: 12px; }
+
+/* IE Specific */
+body, textarea {
+  scrollbar-3dlight-color: #808080;
+  scrollbar-highlight-color: #808080;
+  scrollbar-face-color: #004080;
+  scrollbar-shadow-color: #808080;
+  scrollbar-darkshadow-color: #805B32;
+  scrollbar-arrow-color: #000000;
+  scrollbar-track-color: #F8EFE2;
+}
+/* END IE Specific */
+-->
+</style>
+
+
+</head>
+<body bgcolor="#ffffff">
+<p>
+<table cellspacing="1" cellpadding="10" width="780" align="center" bgcolor="#004080" border="0">
+  
+  <tbody><tr>
+    <td>&nbsp;<font color="#ffffff" size="2">difranco.net</font></td></tr>
+  <tr>
+    <td bgcolor="#ffffff">
+      <h1 align="center">C Operator Precedence Table</h1>
+      <blockquote>This page lists C operators in order of 
+        <i>precedence</i> (highest to lowest). Their <i>associativity</i> indicates in what order operators 
+        of equal precedence in an expression are applied.</blockquote>
+      <div align="center">
+      <center>
+        </center><table style="BORDER-COLLAPSE: collapse" border="1" cellspacing="0" bordercolor="#111111" cellpadding="2" width="90%">
+        
+        <tbody><tr>
+          <th>
+            <p align="center"><b>Operator</b></p></th>
+          <th><b>Description</b></th>
+          <th>
+            <p align="center"><b>Associativity</b></p></th></tr>
+        <tr>
+          <td align="center"><font size="2">( )<br>[ ]<br>.<br>-&gt;<br>++ --</font></td>
+          <td><font size="2">Parentheses (function call) 
+            (see Note 1)<br>Brackets (array subscript)<br>Member selection via object name<br>Member selection via pointer<br>Postfix increment/decrement (see Note 
+          2)</font></td>
+          <td valign="top">
+            <p align="center"><font size="2">left-to-right</font></p></td></tr>
+        <tr>
+          <td align="center"><font><font size="2"><font>++ 
+            --<br>+ -<br>! ~<br>(<i>type</i>)<br>*<br>&amp;<br>sizeof</font> </font></font></td>
+          <td><font size="2">Prefix increment/decrement<br>Unary plus/minus<br>Logical negation/bitwise complement<br>Cast (convert value to temporary value of <i>type</i>)<br>Dereference<br>Address (of 
+            operand)<br>Determine size in bytes on this implementation</font></td>
+          <td valign="top" align="center"><font size="2">right-to-left</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">* &nbsp;/&nbsp; %</font></td>
+          <td><font size="2">Multiplication/division/modulus</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">+ &nbsp;-</font></td>
+          <td><font size="2">Addition/subtraction</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">&lt;&lt;&nbsp; &gt;&gt;</font></td>
+          <td><font size="2">Bitwise shift left, Bitwise 
+            shift right</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">&lt;&nbsp; &lt;=<br>&gt;&nbsp; &gt;=</font></td>
+          <td><font size="2">Relational less than/less than 
+            or equal to<br>Relational greater than/greater 
+            than or equal to</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">== &nbsp;!=</font></td>
+          <td><font size="2">Relational is equal to/is not 
+            equal to</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">&amp;</font></td>
+          <td><font size="2">Bitwise AND</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">^</font></td>
+          <td><font size="2">Bitwise exclusive OR</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">|</font></td>
+          <td><font size="2">Bitwise inclusive OR</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">&amp;&amp;</font></td>
+          <td><font size="2">Logical AND</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">| |</font></td>
+          <td><font size="2">Logical OR</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">? :</font></td>
+          <td><font size="2">Ternary conditional</font></td>
+          <td valign="top" align="center"><font size="2">right-to-left</font></td></tr>
+        <tr>
+          <td align="center"><font size="2">=<br>+= &nbsp;-=<br>*=&nbsp; /=<br>%=&nbsp; 
+            &amp;=<br>^=&nbsp; |=<br>&lt;&lt;=&nbsp; &gt;&gt;=</font></td>
+          <td><font size="2">Assignment<br>Addition/subtraction assignment<br>Multiplication/division assignment<br>Modulus/bitwise AND assignment<br>Bitwise exclusive/inclusive OR assignment<br>Bitwise shift left/right assignment</font></td>
+          <td valign="top" align="center"><font size="2">right-to-left</font></td></tr>
+        <tr>
+          <td>
+            <p align="center"><font size="2">,</font></p></td>
+          <td><font size="2">Comma (separate 
+            expressions)</font></td>
+          <td valign="top" align="center"><font size="2">left-to-right</font></td></tr>
+        <tr>
+          <td colspan="3">
+            <blockquote>
+              <dl>
+                <dt style="MARGIN-TOP: 12px"><font size="2"><b>Note 1:</b> </font>
+                </dt><dd><font size="2">Parentheses are also used 
+                to group sub-expressions to force a different precedence; such 
+                parenthetical expressions can be nested and are evaluated from 
+                inner to outer. </font>
+                </dd><dt><font size="2"><b>Note 2:</b> </font>
+                </dt><dd><font size="2">Postfix 
+                increment/decrement have high precedence, but the actual 
+                increment or decrement of the operand is delayed (to be 
+                accomplished sometime before the statement completes execution). 
+                So in the statement <font><b>y = x * z++; </b></font>the current value 
+                of <font><b>z</b></font> is used to evaluate the 
+                expression (<i>i.e., </i><font><b>z++ 
+                </b></font>evaluates to <font><b>z</b></font>) and <font><b>z</b></font> only 
+                incremented after all else is done. See <b><font><a href="http://www.difranco.net/compsci/postinc.c">postinc.c</a></font></b> 
+                for another example. 
+        </font></dd></dl></blockquote></td></tr></tbody></table></div></td></tr>
+  <tr>
+      <td>&nbsp;<font color="#ffffff" size="1">Updated: 
+      20111216</font></td></tr></tbody></table><!-- P--></p>
+<p><a href="http://www.pagebreeze.com/" target="_blank"><font size="1">  
+</font></a>&nbsp;</p>
+
+</body></html>
